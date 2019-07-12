@@ -1,4 +1,4 @@
-package com.sunshine.jvm.language.laboratory.groovy
+package com.sunshine.jvm.language.junit.jvm.language.laboratory.groovy
 
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication

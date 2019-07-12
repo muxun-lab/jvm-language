@@ -1,4 +1,4 @@
-package com.sunshine.jvm.language.laboratory.java;
+package com.sunshine.jvm.language.junit.jvm.language.laboratory.java;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

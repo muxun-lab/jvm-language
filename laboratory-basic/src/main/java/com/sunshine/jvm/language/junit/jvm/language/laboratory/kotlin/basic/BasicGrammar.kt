@@ -1,5 +1,7 @@
-package com.sunshine.jvm.language.laboratory.kotlin.basic
+package com.sunshine.jvm.language.junit.jvm.language.laboratory.kotlin.basic
 
+import com.sunshine.jvm.language.junit.jvm.language.laboratory.kotlin.domain.Competitor
+import com.sunshine.jvm.language.junit.jvm.language.laboratory.kotlin.domain.UserDTO
 import java.io.File
 import java.nio.file.Files
 import java.nio.file.Paths
@@ -294,5 +296,13 @@ object BasicGrammar {
         var a = 1
         var b = 2
         a = b.also { b = a }
+    }
+
+    /**
+     * when
+     * 多条件
+     */
+    fun whenSecond() {
+
     }
 }

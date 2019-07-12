@@ -1,4 +1,4 @@
-package com.sunshine.jvm.language.laboratory.kotlin.basic
+package com.sunshine.jvm.language.junit.jvm.language.laboratory.kotlin.domain
 
 /**
  * 选手对象

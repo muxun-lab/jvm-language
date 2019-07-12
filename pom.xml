@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>laboratory-basic</module>
+        <module>laboratory-junit</module>
     </modules>
 
     <properties>
@@ -20,23 +21,18 @@
         <junit.verion>4.12</junit.verion>
         <scala.logging.version>3.9.2</scala.logging.version>
         <kotlin.version>1.3.21</kotlin.version>
+        <junit.jupiter.version>5.5.0</junit.jupiter.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+            <!-- Spring Boot -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
                 <version>${spring.boot.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
-            </dependency>
-            <!-- Test -->
-            <dependency>
-                <groupId>junit</groupId>
-                <artifactId>junit</artifactId>
-                <version>${junit.verion}</version>
-                <scope>test</scope>
             </dependency>
             <!-- Scala -->
             <dependency>
@@ -75,6 +71,13 @@
                 <groupId>org.codehaus.groovy</groupId>
                 <artifactId>groovy-all</artifactId>
                 <version>${groovy.version}</version>
+            </dependency>
+            <!-- JUnit -->
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter</artifactId>
+                <version>${junit.jupiter.version}</version>
+                <scope>test</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>

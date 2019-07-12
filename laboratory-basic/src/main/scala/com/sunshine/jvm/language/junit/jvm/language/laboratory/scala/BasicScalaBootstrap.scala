@@ -1,4 +1,4 @@
-package com.sunshine.jvm.language.laboratory.scala
+package com.sunshine.jvm.language.junit.jvm.language.laboratory.scala
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 
