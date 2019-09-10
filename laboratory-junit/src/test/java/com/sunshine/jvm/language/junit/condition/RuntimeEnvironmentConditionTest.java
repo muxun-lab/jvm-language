@@ -1,4 +1,4 @@
-package com.sunshine.jvm.language.junit;
+package com.sunshine.jvm.language.junit.condition;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
