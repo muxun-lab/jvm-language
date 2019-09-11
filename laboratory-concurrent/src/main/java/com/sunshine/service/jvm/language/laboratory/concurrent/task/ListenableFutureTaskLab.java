@@ -3,6 +3,7 @@ package com.sunshine.service.jvm.language.laboratory.concurrent.task;
 import com.google.common.util.concurrent.ListenableFutureTask;
 
 import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.Callable;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
@@ -26,7 +27,8 @@ public class ListenableFutureTaskLab {
 	 * 添加监听线程实验室
 	 */
 	public void lab() throws Exception {
-		ListenableFutureTask listenableFutureTask = ListenableFutureTask.create(new SunshineCallableTask());
+		Callable<SunshineCallableTask> callableTaskCallable = SunshineCallableTask::new;
+		ListenableFutureTask listenableFutureTask = ListenableFutureTask.create(callableTaskCallable.call());
 		listenableFutureTask.addListener(new ListenerOne(), listenableFutureTaskExecutor);
 		listenableFutureTask.addListener(new ListenerTwo(), listenableFutureTaskExecutorTwo);
 		listenableFutureTaskExecutor.submit(listenableFutureTask);

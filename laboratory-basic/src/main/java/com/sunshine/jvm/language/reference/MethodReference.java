@@ -1,7 +1,5 @@
 package com.sunshine.jvm.language.reference;
 
-import java.util.Arrays;
-
 /**
  * 方法引用
  * @author sunshine
@@ -10,8 +8,6 @@ import java.util.Arrays;
 public class MethodReference {
 
 	public void labFirst() {
-		String a = "SUNSHINE";
-		Arrays.sort();
-		FunctionalInterface functionalInterface = a::toLowerCase;
+
 	}
 }
