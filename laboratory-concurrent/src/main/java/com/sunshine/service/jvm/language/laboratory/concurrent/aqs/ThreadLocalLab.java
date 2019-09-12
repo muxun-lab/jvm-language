@@ -17,4 +17,10 @@ public class ThreadLocalLab {
 		threadLocal.set("Sunshine");
 		System.out.println(threadLocal.get().toString());
 	}
+
+	public void threadLocalLabThird() {
+		Thread
+		threadLocal.set("Sunshine");
+		System.out.println(threadLocal.get().toString());
+	}
 }
